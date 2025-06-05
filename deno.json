@@ -1,7 +1,7 @@
 {
   "tasks": {
-    "start": "deno run -A index.ts",
-    "dev": "deno run --watch -A index.ts"
+    "start": "deno run --unstable-broadcast-channel index.ts",
+    "dev": "deno run --watch --unstable-broadcast-channel index.ts"
   },
   "nodeModulesDir": "auto"
 }

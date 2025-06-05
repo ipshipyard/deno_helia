@@ -1,4 +1,4 @@
-import { createHelia } from 'npm:helia'
+import { createHelia } from 'npm:helia@5.4.2'
 
 const node = await createHelia()
 
