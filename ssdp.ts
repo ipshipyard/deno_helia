@@ -29,8 +29,10 @@ socket.on('error', (err) => {
 socket.on('listening', () => {
   try {
     console.log(ssdpSocketOptions.broadcast.address, socket.address().address)
-    socket.addMembership(ssdpSocketOptions.broadcast.address, socket.address().address)
-    // socket.addMembership(ssdpSocketOptions.broadcast.address)
+    // 👇 This call fails with "error Error: addMembership EINVAL"
+    // socket.addMembership("239.255.255.250", socket.address().address)
+    // 👇 Also this one. Probably because of https://github.com/denoland/deno/pull/29207/files#r2131890283
+    socket.addMembership("239.255.255.250")
     socket.setBroadcast(true)
     socket.setMulticastTTL(ssdpSocketOptions.maxHops)
 
