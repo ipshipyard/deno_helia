@@ -1,7 +1,7 @@
 {
   "tasks": {
-    "start": "deno run --unstable-broadcast-channel index.ts",
-    "dev": "deno run --watch --unstable-broadcast-channel index.ts"
+    "start": "deno run --allow-env --allow-ffi --allow-sys --allow-net --unstable-broadcast-channel index.ts",
+    "dev": "deno run --allow-env --allow-ffi --allow-sys --allow-net --watch --unstable-broadcast-channel index.ts"
   },
   "nodeModulesDir": "auto"
 }

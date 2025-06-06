@@ -1,7 +1,7 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:helia@*": "5.4.2",
+    "npm:@achingbrain/ssdp@4.2.2": "4.2.2",
     "npm:helia@5.4.2": "5.4.2"
   },
   "npm": {
@@ -290,7 +290,7 @@
         "@noble/curves",
         "@noble/hashes",
         "it-length-prefixed",
-        "it-length-prefixed-stream@2.0.3",
+        "it-length-prefixed-stream",
         "it-pair",
         "it-pipe",
         "it-stream-types",
@@ -610,7 +610,7 @@
         "@libp2p/utils",
         "@multiformats/multiaddr",
         "any-signal",
-        "it-protobuf-stream@2.0.3",
+        "it-protobuf-stream",
         "main-event",
         "multiformats",
         "protons-runtime",
@@ -641,7 +641,7 @@
         "@multiformats/multiaddr",
         "@multiformats/multiaddr-matcher",
         "any-signal",
-        "it-protobuf-stream@2.0.3",
+        "it-protobuf-stream",
         "it-stream-types",
         "main-event",
         "multiformats",
@@ -684,7 +684,7 @@
         "@multiformats/multiaddr",
         "@multiformats/multiaddr-matcher",
         "delay",
-        "it-protobuf-stream@2.0.3",
+        "it-protobuf-stream",
         "protons-runtime",
         "uint8arraylist"
       ]
@@ -721,7 +721,7 @@
         "@multiformats/multiaddr-matcher",
         "it-drain",
         "it-parallel",
-        "it-protobuf-stream@2.0.3",
+        "it-protobuf-stream",
         "main-event",
         "protons-runtime",
         "uint8arraylist",
@@ -749,41 +749,6 @@
         "uint8arraylist"
       ]
     },
-    "@libp2p/kad-dht@14.2.15": {
-      "integrity": "sha512-iARZsaKrm9LlOE0nRTsqMasYGfWbh+zw1TAMWOY/QHTszFGb9ol7FZoI9WUzoif9ltKLu3BjJpy00b8CVofCBw==",
-      "dependencies": [
-        "@libp2p/crypto",
-        "@libp2p/interface",
-        "@libp2p/interface-internal",
-        "@libp2p/peer-collections",
-        "@libp2p/peer-id",
-        "@libp2p/record",
-        "@libp2p/utils",
-        "@multiformats/multiaddr",
-        "any-signal",
-        "interface-datastore",
-        "it-all",
-        "it-drain",
-        "it-length",
-        "it-length-prefixed",
-        "it-map",
-        "it-merge",
-        "it-parallel",
-        "it-pipe",
-        "it-protobuf-stream@1.1.6",
-        "it-take",
-        "mortice",
-        "multiformats",
-        "p-defer",
-        "p-event",
-        "progress-events",
-        "protons-runtime",
-        "race-signal",
-        "uint8-varint",
-        "uint8arraylist",
-        "uint8arrays"
-      ]
-    },
     "@libp2p/kad-dht@15.1.3": {
       "integrity": "sha512-kXrhN5hsmWrfwROIWH0zf0GKnzdEUHX6+yJQQgXKpoBR8akSgWepHFXUGx4E2j70WbVOuP6IGwDI094OeGjC8Q==",
       "dependencies": [
@@ -805,7 +770,7 @@
         "it-merge",
         "it-parallel",
         "it-pipe",
-        "it-protobuf-stream@2.0.3",
+        "it-protobuf-stream",
         "it-pushable",
         "it-take",
         "main-event",
@@ -876,7 +841,7 @@
       "dependencies": [
         "@libp2p/interface",
         "it-length-prefixed",
-        "it-length-prefixed-stream@2.0.3",
+        "it-length-prefixed-stream",
         "it-stream-types",
         "p-defer",
         "race-signal",
@@ -944,7 +909,7 @@
         "@libp2p/interface",
         "@libp2p/interface-internal",
         "@multiformats/multiaddr",
-        "it-byte-stream@2.0.3",
+        "it-byte-stream",
         "main-event",
         "uint8arrays"
       ]
@@ -984,7 +949,7 @@
         "@peculiar/webcrypto",
         "@peculiar/x509",
         "asn1js",
-        "it-queueless-pushable@2.0.2",
+        "it-queueless-pushable",
         "it-stream-types",
         "protons-runtime",
         "uint8arraylist",
@@ -1055,7 +1020,7 @@
         "get-port",
         "interface-datastore",
         "it-length-prefixed",
-        "it-protobuf-stream@2.0.3",
+        "it-protobuf-stream",
         "it-pushable",
         "it-stream-types",
         "main-event",
@@ -2149,44 +2114,6 @@
         "function-bind"
       ]
     },
-    "helia@5.4.0": {
-      "integrity": "sha512-ZQs1kcVXc14X1c7q2sntbmjyR30Km553TxNYotp9LHgsPIq3PU9AEwjzEjajlh1qQpXuu9X9z825R10VE1PsbQ==",
-      "dependencies": [
-        "@chainsafe/libp2p-noise",
-        "@chainsafe/libp2p-yamux",
-        "@helia/block-brokers",
-        "@helia/delegated-routing-v1-http-api-client",
-        "@helia/interface",
-        "@helia/routers",
-        "@helia/utils",
-        "@ipshipyard/libp2p-auto-tls",
-        "@libp2p/autonat",
-        "@libp2p/bootstrap",
-        "@libp2p/circuit-relay-v2",
-        "@libp2p/config",
-        "@libp2p/dcutr",
-        "@libp2p/identify",
-        "@libp2p/interface",
-        "@libp2p/kad-dht@14.2.15",
-        "@libp2p/keychain",
-        "@libp2p/mdns",
-        "@libp2p/mplex",
-        "@libp2p/ping",
-        "@libp2p/tcp",
-        "@libp2p/tls",
-        "@libp2p/upnp-nat",
-        "@libp2p/webrtc",
-        "@libp2p/websockets",
-        "@multiformats/dns",
-        "blockstore-core",
-        "datastore-core",
-        "interface-blockstore",
-        "interface-datastore",
-        "ipns",
-        "libp2p",
-        "multiformats"
-      ]
-    },
     "helia@5.4.2": {
       "integrity": "sha512-4jFBFE+dn+1UClCDbJBP+dA6OT9TrD+f8m5VIle7TCTAYTkDfR4mi0VtaWM4CWvrbDYwBk26xR9roYtXlG9oHw==",
       "dependencies": [
@@ -2205,7 +2132,7 @@
         "@libp2p/dcutr",
         "@libp2p/identify",
         "@libp2p/interface",
-        "@libp2p/kad-dht@15.1.3",
+        "@libp2p/kad-dht",
         "@libp2p/keychain",
         "@libp2p/mdns",
         "@libp2p/mplex",
@@ -2409,19 +2336,11 @@
     "it-all@3.0.9": {
       "integrity": "sha512-fz1oJJ36ciGnu2LntAlE6SA97bFZpW7Rnt0uEc1yazzR2nKokZLr8lIRtgnpex4NsmaBcvHF+Z9krljWFy/mmg=="
     },
-    "it-byte-stream@1.1.1": {
-      "integrity": "sha512-OIOb8PvK9ZV7MHvyxIDNyN3jmrxrJdx99G0RIYYb3Tzo1OWv+O1C6mfg7nnlDuuTQz2POYFXe87AShKAEl+POw==",
-      "dependencies": [
-        "it-queueless-pushable@1.0.2",
-        "it-stream-types",
-        "uint8arraylist"
-      ]
-    },
     "it-byte-stream@2.0.3": {
       "integrity": "sha512-h7FFcn4DWiWsJw1dCJhuPdiY8cGi1z8g4aLAfFspTaJbwQxvEMlEBFG/f8lIVGwM8YK26ClM4/9lxLVhF33b8g==",
       "dependencies": [
         "abort-error",
-        "it-queueless-pushable@2.0.2",
+        "it-queueless-pushable",
         "it-stream-types",
         "race-signal",
         "uint8arraylist"
@@ -2445,20 +2364,11 @@
         "it-peekable"
       ]
     },
-    "it-length-prefixed-stream@1.2.1": {
-      "integrity": "sha512-FYqlxc2toUoK+aPO5r3KDBIUG1mOvk2DzmjQcsfLUTHRWMJP4Va9855tVzg/22Bj+VUUaT7gxBg7HmbiCxTK4w==",
-      "dependencies": [
-        "it-byte-stream@1.1.1",
-        "it-stream-types",
-        "uint8-varint",
-        "uint8arraylist"
-      ]
-    },
     "it-length-prefixed-stream@2.0.3": {
       "integrity": "sha512-Ns3jNFy2mcFnV59llCYitJnFHapg8wIcOsWkEaAwOkG9v4HBCk24nze/zGDQjiJdDTyFXTT5GOY3M/uaksot3w==",
       "dependencies": [
         "abort-error",
-        "it-byte-stream@2.0.3",
+        "it-byte-stream",
         "it-stream-types",
         "uint8-varint",
         "uint8arraylist"
@@ -2486,7 +2396,7 @@
     "it-merge@3.0.12": {
       "integrity": "sha512-nnnFSUxKlkZVZD7c0jYw6rDxCcAQYcMsFj27thf7KkDhpj0EA0g9KHPxbFzHuDoc6US2EPS/MtplkNj8sbCx4Q==",
       "dependencies": [
-        "it-queueless-pushable@2.0.2"
+        "it-queueless-pushable"
       ]
     },
     "it-ndjson@1.1.4": {
@@ -2519,19 +2429,11 @@
         "it-stream-types"
       ]
     },
-    "it-protobuf-stream@1.1.6": {
-      "integrity": "sha512-TxqgDHXTBt1XkYhrGKP8ubNsYD4zuTClSg6S1M0xTPsskGKA4nPFOGM60zrkh4NMB1Wt3EnsqM5U7kXkx60EXQ==",
-      "dependencies": [
-        "it-length-prefixed-stream@1.2.1",
-        "it-stream-types",
-        "uint8arraylist"
-      ]
-    },
     "it-protobuf-stream@2.0.3": {
       "integrity": "sha512-Dus9qyylOSnC7l75/3qs6j3Fe9MCM2K5luXi9o175DYijFRne5FPucdOGIYdwaDBDQ4Oy34dNCuFobOpcusvEQ==",
       "dependencies": [
         "abort-error",
-        "it-length-prefixed-stream@2.0.3",
+        "it-length-prefixed-stream",
         "it-stream-types",
         "uint8arraylist"
       ]
@@ -2549,13 +2451,6 @@
         "it-pushable",
         "main-event",
         "race-event",
-        "race-signal"
-      ]
-    },
-    "it-queueless-pushable@1.0.2": {
-      "integrity": "sha512-BFIm48C4O8+i+oVEPQpZ70+CaAsVUircvZtZCrpG2Q64933aLp+tDmas1mTBwqVBfIUUlg09d+e6SWW1CBuykQ==",
-      "dependencies": [
-        "p-defer",
         "race-signal"
       ]
     },
@@ -2733,7 +2628,7 @@
         "any-signal",
         "datastore-core",
         "interface-datastore",
-        "it-byte-stream@2.0.3",
+        "it-byte-stream",
         "it-merge",
         "it-parallel",
         "main-event",
